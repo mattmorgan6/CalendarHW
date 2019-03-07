@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:fitsSystemWindows="true"
+                                            tools:openDrawer="start">
+        
+        <!-- App Bar Home -->
+        <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+                                                         android:layout_height="match_parent"
+                                                         tools:context=".Views.MainActivity">
+            
+            <android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:theme="@style/AppTheme.AppBarOverlay">
+                
+                <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="?attr/actionBarSize"
+                                                   android:background="?attr/colorPrimary"
+                                                   app:popupTheme="@style/AppTheme.PopupOverlay"/>
+            </android.support.design.widget.AppBarLayout>
+            
+            <!-- Content Home -->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                          tools:context=".Views.MainActivity">
+                
+                <CalendarView android:id="@+id/calendar"
+                              android:layout_width="match_parent"
+                              android:layout_height="300dp"/>
+                        
+                <ListView android:id="@+id/eventsList"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            
+            <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_gravity="bottom|end"
+                                                                android:layout_margin="@dimen/fab_margin"
+                                                                app:srcCompat="@android:drawable/ic_dialog_email"/>
+        </android.support.design.widget.CoordinatorLayout>
+        
+        <android.support.design.widget.NavigationView android:layout_width="wrap_content"
+                                                      android:layout_height="match_parent"
+                                                      android:layout_gravity="start"
+                                                      android:fitsSystemWindows="false">
+            
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+                
+                <!-- Top Green Part / Nav Header Home-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="100dp"
+                              android:background="@drawable/side_nav_bar"
+                              android:orientation="horizontal"
+                              android:paddingLeft="@dimen/activity_horizontal_margin"
+                              android:paddingRight="@dimen/activity_horizontal_margin"
+                              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+                    
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:gravity="bottom"
+                                  android:orientation="vertical"
+                                  android:paddingBottom="@dimen/activity_vertical_margin">
+                        
+                        <TextView android:id="@+id/username_header"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Android Studio"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+                        
+                        <TextView android:id="@+id/email_header"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="4dp"
+                                  android:text="@string/nav_header_subtitle"/>
+                    </LinearLayout>
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_marginBottom="8dp"
+                                  android:gravity="bottom"
+                                  android:orientation="vertical"
+                                  android:paddingBottom="10dp">
+                        
+                        <Button android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:layout_marginBottom="2dp"
+                                android:background="@drawable/sign_in_button"
+                                android:gravity="center"
+                                android:onClick="logOutButton_Clicked"
+                                android:text="log out"
+                                android:textColor="#ffffff"/>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <!-- This is the Menu Part -->
+                <Button android:id="@+id/subjectAddButton"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:onClick="subjectAddButton_Clicked"
+                        android:text="@string/ac1"/>
+                
+                <ListView android:id="@+id/periodsList"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

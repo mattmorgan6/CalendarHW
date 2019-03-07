@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    
+    <string name="prompt_password">Password (optional)</string>
+    
+    <string name="action_sign_in">Sign in or register</string>
+    
+    <string name="action_sign_in_short">Sign in</string>
+    
+    <string name="error_invalid_email">This email address is invalid</string>
+    
+    <string name="error_invalid_password">This password is too short</string>
+    
+    <string name="error_incorrect_password">This password is incorrect</string>
+    
+    <string name="error_field_required">This field is required</string>
+    
+    <string name="permission_rationale">
+        "Contacts permissions are needed for providing email completions."
+    </string>
+
+    <!-- Strings for the activity_add_class -->
+    <string name="ac1">Add a new class</string>
+    
+    <string name="ac2">Name of Class:</string>
+    
+    <string name="ac3">IB Lit</string>
+    
+    <string name="ac4">Name of Teacher:</string>
+    
+    <string name="ac5">King</string>
+    
+    <string name="ac6">Period:</string>
+    
+    <string name="ac7">2</string>
+    
+    <string name="ac8">Add Class:</string>
+
+    <!-- Strings for the activity_add_event -->
+    <string name="ae1">Add an assignment</string>
+    
+    <string name="ae2">Assignment:</string>
+    
+    <string name="ae3">Textbook Reading</string>
+    <string name="ae4">Date:</string>
+    
+    <string name="ae5">/</string>
+    
+    <string name="ae6">Description:</string>
+    
+    <string name="ae7">Read and Take Notes from Tindall and Shi on Pages 111 – 222</string>
+    
+    <string name="ae8">Add Event:</string>
+
+    <!-- Strings for the activity_main -->
+    <string name="am1">Sign In</string>
+    
+    <string name="am2">Log Out</string>
+    
+    <string name="am3">Add Class</string>
+
+    <!-- Description of Grey Dot -->
+    <string name="greyDot">A grey dot used between the calendar and assignments list</string>
+
+    <string-array name="monthArray">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="dayArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="yearArray">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+    <string-array name="timeArray">
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+    </string-array>
+
+    <string-array name="amPmArray">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+    
+    <string name="title_activity_authenticator">AuthenticatorActivity</string>
+    
+    <string name="title_activity_home">HomeActivity</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <string name="nav_header_title">Android Studio</string>
+    
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    
+    <string name="nav_header_desc">Navigation header</string>
+    
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

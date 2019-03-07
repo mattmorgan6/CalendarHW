@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.mattm.calendar.Views.AddEventActivity">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="32dp"
+              android:text="@string/ae1"
+              android:textColor="#3e3e3e"
+              android:textSize="18sp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="24dp"
+              android:text="@string/ae2"
+              android:textSize="18sp"/>
+
+    <EditText android:id="@+id/eventName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="16dp"
+              android:background="@drawable/edittext_style"
+              android:hint="@string/ae3"
+              android:paddingBottom="8dp"
+              android:paddingLeft="48dp"
+              android:paddingRight="48dp"
+              android:paddingTop="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:text="@string/ae4"
+              android:textSize="18sp"/>
+
+    <!-- Insert date picker here TODO: Change to colorFontReg-->
+    <TextView android:id="@+id/tvDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:layout_gravity="center_horizontal"
+              android:text="Sunday,    June 4,    2018"
+              android:textSize="18sp"
+              android:background="@drawable/edittext_style"
+              android:paddingBottom="8dp"
+              android:paddingLeft="48dp"
+              android:paddingRight="48dp"
+              android:paddingTop="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:text="@string/ae6"
+              android:textSize="18sp" />
+
+    <EditText android:id="@+id/descriptionText"
+              android:layout_width="match_parent"
+              android:layout_height="94dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:background="@drawable/edittext_style"
+              android:gravity="top"
+              android:hint="@string/ae7"
+              android:padding="8dp"/>
+
+    <Button android:id="@+id/addEventButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:onClick="classButton_Clicked"
+            android:text="@string/ae8" />
+</LinearLayout>

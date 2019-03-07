@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#336699</color>
+
+    <color name="colorPrimaryDark">#2a363b</color>
+    
+    <color name="colorAccent">#339966</color>
+    
+    <color name="lines">#f4f2f2</color>
+    
+    <color name="colorBackground">#feffff</color>
+    
+    <color name="colorWhite">#ffffff</color>
+    
+    <color name="colorFontDark">#3e3e3e</color>
+    
+    <color name="colorFontReg">#808080</color>
+
+    <!-- dark color theme colors below-->
+    <color name="colorPrimaryInverse">#000000</color>
+    
+    <color name="colorPrimaryDarkInverse">#8e44ad</color>
+    
+    <color name="colorAccentInverse">#f39c12</color>
+    
+    <color name="colorFontDarkInverse">#ffffff</color>
+    
+    <color name="colorFontRegInverse">#f4f2f2</color>
+</resources>
